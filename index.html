@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PinForge AI — Turn AliExpress Affiliate Products Into Passive USD Income on Pinterest</title>
+  <meta name="description" content="PinForge AI connects your AliExpress affiliate account and Pinterest Business account, auto-finds trending products, generates affiliate links and AI-optimized pins, and posts on schedule — so you earn USD commissions safely via the official APIs."/>
+  <meta name="keywords" content="AliExpress affiliate automation, AliExpress to Pinterest, Pinterest affiliate marketing, affiliate link automation, Pinterest scheduler, passive income Pinterest, AliExpress affiliate API"/>
+  <link rel="canonical" href="https://pinforgeai.site/"/>
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://pinforgeai.site/"/>
+  <meta property="og:title"       content="PinForge AI — Turn AliExpress Affiliates Into Automated Pinterest Income"/>
+  <meta property="og:description" content="Auto-fetch trending AliExpress products, generate your affiliate links, and post AI-optimized pins to Pinterest on schedule. Official APIs only. No bots. No scraping."/>
+  <meta property="og:image"       content="https://pinforgeai.site/og-image.png"/>
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:site"        content="@pinforgeai"/>
+  <meta name="twitter:title"       content="PinForge AI — Turn AliExpress Affiliates Into Automated Pinterest Income"/>
+  <meta name="twitter:description" content="Auto-fetch trending AliExpress products, generate your affiliate links, and post AI-optimized pins to Pinterest on schedule. Official APIs only. No bots. No scraping."/>
+  <meta name="twitter:image"       content="https://pinforgeai.site/og-image.png"/>
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"PinForge AI",
+   "applicationCategory":"BusinessApplication","operatingSystem":"Web",
+   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+   "description":"Automated AliExpress affiliate marketing on Pinterest: auto-fetch trending products, generate affiliate links, and post AI-optimized pins via the official AliExpress and Pinterest APIs.",
+   "url":"https://pinforgeai.site","publisher":{"@type":"Organization","name":"PinForge AI","url":"https://pinforgeai.site"}}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#9333ea"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Notice bar -->
+<div class="notice-bar" role="banner">
+  🚀 PinForge AI turns AliExpress products into Pinterest income — <a href="waitlist.html">Join the waitlist free</a>
+</div>
+
+<!-- Nav -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="PinForge AI Home">
+      <div class="nav-logo-icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.46 6 6.93V22h2v-6.07c3.39-.47 6-3.39 6-6.93 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill="white"/>
+          <circle cx="12" cy="9" r="2.5" fill="white" opacity=".85"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text">PinForge <span>AI</span></span>
+    </a>
+    <div class="nav-links" role="menubar">
+      <a href="features.html" role="menuitem">Features</a>
+      <a href="pricing.html" role="menuitem">Pricing</a>
+      <a href="about.html" role="menuitem">About</a>
+      <a href="faq.html" role="menuitem">FAQ</a>
+      <a href="contact.html" role="menuitem">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-theme-btn" data-theme-toggle data-theme-icon="☀️" aria-label="Toggle theme">☀️</button>
+      <a href="coming-soon.html" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Get started free</a>
+      <button class="nav-mobile-btn" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile-menu" id="mobileMenu" role="menu" aria-label="Mobile navigation">
+  <a href="features.html" role="menuitem">Features</a>
+  <a href="pricing.html" role="menuitem">Pricing</a>
+  <a href="about.html" role="menuitem">About</a>
+  <a href="faq.html" role="menuitem">FAQ</a>
+  <a href="contact.html" role="menuitem">Contact</a>
+  <a href="pricing.html" class="btn btn-primary" style="margin-top:.5rem">Get started free</a>
+</div>
+
+<main id="main">
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+  <div class="hero-eyebrow" role="note">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="#16a34a" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Official AliExpress &amp; Pinterest APIs · No scraping · No bots
+  </div>
+
+  <h1 id="hero-heading">
+    Turn AliExpress products<br/>
+    into <span class="text-gradient">passive USD income</span> on Pinterest
+  </h1>
+
+  <p class="hero-subtitle">
+    Connect your AliExpress affiliate account and your Pinterest Business account. PinForge AI finds trending products, generates your affiliate links, writes optimized pins, and posts them on schedule — so you earn commissions without the manual work.
+  </p>
+
+  <div class="hero-actions">
+    <a href="pricing.html" class="btn btn-primary btn-lg" aria-label="Start for free — no credit card">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      Start for free
+    </a>
+    <a href="features.html" class="btn btn-ghost btn-lg">See how it works</a>
+  </div>
+  <p class="hero-note"><span>✓</span> Your own affiliate tracking ID &nbsp;·&nbsp; <span>✓</span> Official APIs only &nbsp;·&nbsp; <span>✓</span> No credit card required</p>
+
+  <!-- Dashboard mockup -->
+  <div class="dashboard-mockup reveal-scale" data-delay="200">
+    <div class="dashboard-mockup-inner">
+      <div class="mockup-bar" aria-hidden="true">
+        <div class="mockup-dot"></div>
+        <div class="mockup-dot"></div>
+        <div class="mockup-dot"></div>
+        <div class="mockup-url">app.pinforgeai.site/dashboard</div>
+      </div>
+      <div class="mockup-body" aria-hidden="true" role="img" aria-label="PinForge AI dashboard preview showing stats and pin queue">
+        <div class="mockup-sidebar">
+          <div class="mockup-nav-item active"><div class="mockup-nav-dot" style="background:#9333ea"></div><span style="font-size:10px">Dashboard</span></div>
+          <div class="mockup-nav-item"><div class="mockup-nav-dot" style="background:#475569"></div><span style="font-size:10px">Create Pins</span></div>
+          <div class="mockup-nav-item"><div class="mockup-nav-dot" style="background:#475569"></div><span style="font-size:10px">Queue</span></div>
+          <div class="mockup-nav-item"><div class="mockup-nav-dot" style="background:#475569"></div><span style="font-size:10px">Analytics</span></div>
+          <div class="mockup-nav-item"><div class="mockup-nav-dot" style="background:#475569"></div><span style="font-size:10px">Accounts</span></div>
+          <div class="mockup-nav-item"><div class="mockup-nav-dot" style="background:#475569"></div><span style="font-size:10px">Settings</span></div>
+        </div>
+        <div class="mockup-main">
+          <div class="mockup-stats">
+            <div class="mockup-stat"><div class="mockup-stat-val" style="color:#16a34a">$128</div><div class="mockup-stat-label">Commission (7d)</div></div>
+            <div class="mockup-stat"><div class="mockup-stat-val" style="color:#16a34a">42</div><div class="mockup-stat-label">Pins Posted</div></div>
+            <div class="mockup-stat"><div class="mockup-stat-val" style="color:#16a34a">1,240</div><div class="mockup-stat-label">Link Clicks</div></div>
+            <div class="mockup-stat"><div class="mockup-stat-val" style="color:#16a34a">98%</div><div class="mockup-stat-label">Success Rate</div></div>
+          </div>
+          <div class="mockup-pins">
+            <div class="mockup-pin"><div class="mockup-pin-img"></div><div class="mockup-pin-body"><div class="mockup-pin-title"></div><div class="mockup-pin-sub"></div><div class="mockup-pin-badge green"></div></div></div>
+            <div class="mockup-pin"><div class="mockup-pin-img" style="background:linear-gradient(135deg,rgba(22,163,74,.18),rgba(16,185,129,.08))"></div><div class="mockup-pin-body"><div class="mockup-pin-title"></div><div class="mockup-pin-sub"></div><div class="mockup-pin-badge green"></div></div></div>
+            <div class="mockup-pin"><div class="mockup-pin-img" style="background:linear-gradient(135deg,rgba(22,163,74,.14),rgba(16,185,129,.08))"></div><div class="mockup-pin-body"><div class="mockup-pin-title"></div><div class="mockup-pin-sub"></div><div class="mockup-pin-badge green"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust bar ─────────────────────────────────────────── -->
+<section aria-label="Trust indicators" style="padding:0">
+  <div class="container">
+    <div class="trust-bar">
+      <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Official AliExpress &amp; Pinterest APIs</div>
+      <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Auto affiliate links with your ID</div>
+      <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Human-like 15–60 min delays</div>
+      <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Zero passwords stored</div>
+      <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Multi-account support</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Affiliate Automation Spotlight ────────────────────── -->
+<section id="affiliate-automation" aria-labelledby="affiliate-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ Your automated affiliate machine</div>
+      <h2 id="affiliate-heading" class="section-title">From AliExpress product to Pinterest commission — automatically</h2>
+      <p class="section-subtitle">PinForge AI runs the full affiliate loop for you: source, link, write, and publish. You keep your own affiliate ID, so every commission is tracked to you.</p>
+    </header>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">1</div>
+        <h3>Auto-fetch trending products</h3>
+        <p>PinForge AI pulls best-selling, trending products from AliExpress via the official affiliate API — not scraping. Your product feed is always fresh and demand-driven.</p>
+      </div>
+      <div class="step reveal" data-delay="100">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">2</div>
+        <h3>Auto-generate affiliate links</h3>
+        <p>Every product gets your tracking ID embedded automatically, so commissions are attributed to you. No manual link building, no broken tracking.</p>
+      </div>
+      <div class="step reveal" data-delay="200">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">3</div>
+        <h3>Auto-download images &amp; write pins</h3>
+        <p>Official product images are downloaded and AI writes the optimized title, description, hashtags, and alt text for each pin.</p>
+      </div>
+      <div class="step reveal" data-delay="300">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">4</div>
+        <h3>Auto-post to Pinterest</h3>
+        <p>Pins publish on your schedule with human-like delays and safety caps, across one or multiple Pinterest Business accounts.</p>
+      </div>
+      <div class="step reveal" data-delay="400">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">5</div>
+        <h3>Earn USD commissions</h3>
+        <p>When Pinterest users click your pin and buy, AliExpress pays you in USD — tracked, recurring, and on autopilot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ──────────────────────────────────────────── -->
+<section id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ Features</div>
+      <h2 id="features-heading" class="section-title">Everything your affiliate machine needs</h2>
+      <p class="section-subtitle">Sourcing, link generation, AI content, and safe publishing — built for automated affiliate income, not just scheduling.</p>
+    </header>
+
+    <div class="features-grid">
+      <!-- Feature cards -->
+      <article class="card reveal" data-delay="0">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>AliExpress Trending Products</h3>
+        <p>Auto-fetch best-selling and trending products from your niche via the official AliExpress affiliate API. Your feed is always filled with in-demand items — no manual sourcing, no scraping.</p>
+      </article>
+
+      <article class="card reveal" data-delay="80">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>Auto Affiliate Links</h3>
+        <p>Every pin carries your tracking ID automatically, so commissions are attributed to you. Generate product links at scale without touching a single URL.</p>
+      </article>
+
+      <article class="card reveal" data-delay="160">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>AI Content Generation</h3>
+        <p>AI writes SEO-optimized titles (100 chars), descriptions (500 chars), 5–8 hashtags, and alt text for every product. Powered by Gemini, GPT, or DeepSeek.</p>
+      </article>
+
+      <article class="card reveal" data-delay="0">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Smart Scheduling</h3>
+        <p>Pins post with randomized 15–60 minute delays, capped at 15 per account per day. The scheduler mimics natural human cadence — keeping accounts healthy long-term.</p>
+      </article>
+
+      <article class="card reveal" data-delay="80">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>Official AliExpress &amp; Pinterest APIs</h3>
+        <p>Both integrations run on official, documented APIs with OAuth. We never see or store your passwords — only the tokens the platforms issue.</p>
+      </article>
+
+      <article class="card reveal" data-delay="160">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Multiple Pinterest Accounts</h3>
+        <p>Connect and manage multiple Pinterest Business accounts from one dashboard. Each account gets its own queue, schedule, safety limits, and analytics.</p>
+      </article>
+
+      <article class="card reveal" data-delay="0">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        </div>
+        <h3>Bulk Product Import</h3>
+        <p>Import 50+ products at once. AI generates unique content for each and adds them all to the queue with spaced schedules — ideal for scaling a catalog.</p>
+      </article>
+
+      <article class="card reveal" data-delay="80">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Commission Analytics</h3>
+        <p>Track clicks, posts, and link performance across accounts. See what's converting and double down on the products that earn you commission.</p>
+      </article>
+
+      <article class="card reveal" data-delay="160">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <h3>AI Assistant</h3>
+        <p>An in-app chat assistant for strategy, niche suggestions, title tweaks, and questions — so you're never guessing what to promote next.</p>
+      </article>
+
+      <article class="card reveal" data-delay="0">
+        <div class="feature-icon" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.25)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Approval Queue &amp; Trust System</h3>
+        <p>Start in manual-approve mode. As it learns your preferences, the trust score rises and auto-approves — keeping you in control until you're confident.</p>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem">
+      <a href="features.html" class="btn btn-ghost">View all features →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── How it works ───────────────────────────────────────── -->
+<section id="how" style="background:var(--bg-surface)" aria-labelledby="how-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ How it works</div>
+      <h2 id="how-heading" class="section-title">Set up once. Earn on autopilot.</h2>
+      <p class="section-subtitle">Connect two accounts and let the machine handle the rest — from sourcing to commission.</p>
+    </header>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">01</div>
+        <h3>Connect AliExpress</h3>
+        <p>Link your AliExpress affiliate account via the official API. Your own affiliate/tracking ID stays yours, so every sale is tracked to you.</p>
+      </div>
+      <div class="step reveal" data-delay="100">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">02</div>
+        <h3>Connect Pinterest</h3>
+        <p>Connect one or more Pinterest Business accounts through official OAuth. We store only the token Pinterest issues — never your password.</p>
+      </div>
+      <div class="step reveal" data-delay="200">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">03</div>
+        <h3>AI sources &amp; writes</h3>
+        <p>PinForge AI finds trending products, downloads images, generates affiliate links, and writes optimized pins — title, description, hashtags, and alt text.</p>
+      </div>
+      <div class="step reveal" data-delay="300">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">04</div>
+        <h3>Approve — or let trust auto-approve</h3>
+        <p>Review pins in the approval queue when you want control. As the trust system learns your preferences, it auto-approves on your behalf.</p>
+      </div>
+      <div class="step reveal" data-delay="400">
+        <div class="step-num" style="background:rgba(22,163,74,.15);color:#16a34a;border:1px solid rgba(22,163,74,.3)">05</div>
+        <h3>Auto-posts &amp; you earn</h3>
+        <p>Pins publish on schedule with human-like delays. When Pinterest users click and buy, AliExpress pays you your commission in USD.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust badges ───────────────────────────────────────── -->
+<section aria-label="PinForge AI trust signals">
+  <div class="container">
+    <div class="badge-row">
+      <div class="trust-badge reveal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Official AliExpress &amp; Pinterest APIs</div>
+      <div class="trust-badge reveal" data-delay="60"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>OAuth Secured</div>
+      <div class="trust-badge reveal" data-delay="120"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>Auto Affiliate Links</div>
+      <div class="trust-badge reveal" data-delay="180"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>AI Assistant</div>
+      <div class="trust-badge reveal" data-delay="240"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Privacy First</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Who it's for ───────────────────────────────────────── -->
+<section style="background:var(--bg-surface)" aria-labelledby="usecase-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ Built for</div>
+      <h2 id="usecase-heading" class="section-title">Built for people who earn from AliExpress on Pinterest</h2>
+    </header>
+    <div class="testimonials-grid">
+      <article class="card usecase-card reveal">
+        <div class="usecase-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+        <h3>AliExpress affiliate marketers</h3>
+        <p>Automate the full loop — sourcing, affiliate links, and pins — and grow USD commissions without hours of manual work every day.</p>
+      </article>
+      <article class="card usecase-card reveal" data-delay="100">
+        <div class="usecase-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <h3>Dropshippers on Pinterest</h3>
+        <p>Keep fresh, trending products flowing to Pinterest automatically — with your affiliate links built in to capture sales and commissions.</p>
+      </article>
+      <article class="card usecase-card reveal" data-delay="200">
+        <div class="usecase-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <h3>Affiliate bloggers &amp; creators</h3>
+        <p>Turn your Pinterest traffic into USD income. PinForge AI sources products and writes pins for you, so you can focus on creating content.</p>
+      </article>
+      <article class="card usecase-card reveal" data-delay="100">
+        <div class="usecase-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Agencies (multi-client)</h3>
+        <p>Run affiliate campaigns for multiple clients from one dashboard — separate accounts, queues, and tracking per client, with white-label options.</p>
+      </article>
+      <article class="card usecase-card reveal" data-delay="200">
+        <div class="usecase-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <h3>Side-hustlers</h3>
+        <p>Want passive USD income without a full-time commitment? Set up once and let the system source, write, and post while you live your life.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── Pricing teaser ─────────────────────────────────────── -->
+<section aria-labelledby="pricing-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ Pricing</div>
+      <h2 id="pricing-heading" class="section-title">Simple, honest pricing</h2>
+      <p class="section-subtitle">Start free. Scale when ready. No surprise fees.</p>
+    </header>
+    <div class="pricing-grid" style="max-width:900px;margin:0 auto">
+      <!-- Free -->
+      <div class="card pricing-card reveal">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">$0</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <p class="pricing-desc">Perfect for side-hustlers just starting their AliExpress affiliate journey.</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>1 Pinterest account</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>5 pins/day</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Basic AI content (Gemini)</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Manual approve queue</span></li>
+        </ul>
+        <a href="pricing.html" class="btn btn-ghost w-full">Get started free</a>
+      </div>
+      <!-- Pro -->
+      <div class="card card-gradient-border pricing-card featured reveal" data-delay="100">
+        <div class="pricing-popular" aria-label="Most popular plan">Most popular</div>
+        <div class="pricing-name" style="color:var(--primary-lt)">Pro</div>
+        <div class="pricing-price">
+          <span class="pricing-amount" style="background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">$19</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <p class="pricing-desc">For affiliate marketers scaling AliExpress revenue on Pinterest.</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>Up to 5 Pinterest accounts</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>15 pins/day per account</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>AliExpress auto-sourcing</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>Auto affiliate links</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>All AI providers (Gemini, GPT, DeepSeek)</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Bulk import &amp; analytics</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Auto-approve trust system</span></li>
+        </ul>
+        <a href="pricing.html" class="btn btn-primary w-full">Start 14-day free trial</a>
+      </div>
+      <!-- Agency -->
+      <div class="card pricing-card reveal" data-delay="200">
+        <div class="pricing-name">Agency</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">$49</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <p class="pricing-desc">For agencies managing AliExpress affiliate campaigns for multiple clients.</p>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>Unlimited accounts</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span><strong>Full AliExpress affiliate automation</strong></span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Team member access</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>White-label ready</span></li>
+          <li class="pricing-feat"><div class="pricing-feat-icon check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>Priority support</span></li>
+        </ul>
+        <a href="pricing.html" class="btn btn-ghost w-full">Contact sales</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:2rem;font-size:.875rem;color:var(--text-dim)">All plans include: official AliExpress &amp; Pinterest APIs, safe scheduling, AI content, and queue management.</p>
+  </div>
+</section>
+
+<!-- ── Safety section ─────────────────────────────────────── -->
+<section style="background:var(--bg-surface)" aria-labelledby="safety-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div class="reveal">
+        <div class="section-eyebrow">✦ Safety first</div>
+        <h2 id="safety-heading" class="section-title">Your accounts are protected. You stay in control.</h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:2rem">PinForge AI runs on the official AliExpress and Pinterest APIs — no scraping, no bots, no passwords. Every safety rule is enforced server-side, and the approval queue keeps you in charge until you're ready to let the trust system take over.</p>
+        <ul style="display:flex;flex-direction:column;gap:1rem">
+          <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.875rem;color:var(--text-muted)">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(22,163,74,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span><strong style="color:var(--text)">Official AliExpress API:</strong> Products and images come from AliExpress's affiliate API, not scraping — so sourcing stays compliant.</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.875rem;color:var(--text-muted)">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(22,163,74,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span><strong style="color:var(--text)">Hard daily cap:</strong> Max 15 pins per Pinterest account per 24 hours. Cannot be overridden.</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.875rem;color:var(--text-muted)">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(22,163,74,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span><strong style="color:var(--text)">Approval queue in control:</strong> You manually approve pins until the trust system learns your style — auto-approve only when you're confident.</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.75rem;font-size:.875rem;color:var(--text-muted)">
+            <div style="width:24px;height:24px;border-radius:50%;background:rgba(22,163,74,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span><strong style="color:var(--text)">Duplicate prevention:</strong> SHA-256 content hash stops you from re-posting identical content to the same account.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card card-glass reveal" data-delay="150" style="padding:2rem">
+        <div style="text-align:center;margin-bottom:1.5rem">
+          <div style="font-size:3rem;margin-bottom:.5rem" aria-hidden="true">🛡️</div>
+          <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:.25rem">Safety by design</h3>
+          <p style="font-size:.875rem;color:var(--text-muted)">Rules enforced server-side. Always.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-elevated);border-radius:.75rem;border:1px solid var(--border)">
+            <span style="font-size:.8125rem;color:var(--text-muted)">Max pins/day</span>
+            <span style="font-size:.8125rem;font-family:monospace;color:var(--green);background:rgba(16,185,129,.1);padding:.25rem .5rem;border-radius:.5rem">15 (hard cap)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-elevated);border-radius:.75rem;border:1px solid var(--border)">
+            <span style="font-size:.8125rem;color:var(--text-muted)">Post delay</span>
+            <span style="font-size:.8125rem;font-family:monospace;color:var(--primary-lt);background:rgba(147,51,234,.1);padding:.25rem .5rem;border-radius:.5rem">15–60 min randomized</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-elevated);border-radius:.75rem;border:1px solid var(--border)">
+            <span style="font-size:.8125rem;color:var(--text-muted)">Duplicate check</span>
+            <span style="font-size:.8125rem;font-family:monospace;color:var(--cyan);background:rgba(6,182,212,.1);padding:.25rem .5rem;border-radius:.5rem">SHA-256 hash</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;background:var(--bg-elevated);border-radius:.75rem;border:1px solid var(--border)">
+            <span style="font-size:.8125rem;color:var(--text-muted)">API method</span>
+            <span style="font-size:.8125rem;font-family:monospace;color:#16a34a;background:rgba(22,163,74,.1);padding:.25rem .5rem;border-radius:.5rem">Official APIs only</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Affiliate Results / Social Proof ────────────────── -->
+<section id="results" aria-labelledby="results-heading">
+  <div class="container">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ The outcome</div>
+      <h2 id="results-heading" class="section-title">Your affiliate machine, earning in USD</h2>
+      <p class="section-subtitle">PinForge AI is a tool, not a get-rich-quick promise. It removes the manual work so you can earn commissions consistently — the numbers below show what's possible when the loop runs on autopilot.</p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-item reveal">
+        <div class="stat-number">[X]</div>
+        <div class="stat-label">avg. USD commission per pin click</div>
+      </div>
+      <div class="stat-item reveal" data-delay="100">
+        <div class="stat-number">[X]</div>
+        <div class="stat-label">pins published daily per account</div>
+      </div>
+      <div class="stat-item reveal" data-delay="200">
+        <div class="stat-number">[X]</div>
+        <div class="stat-label">hours saved each week on manual pinning</div>
+      </div>
+    </div>
+
+    <div class="testimonials-grid" style="margin-top:2.5rem">
+      <article class="card testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars"><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span></div>
+        <p class="testimonial-text">"I connected my AliExpress affiliate account and Pinterest, and the system just started feeding products and posting pins. I check the dashboard, not the clock."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#16a34a">[A]</div>
+          <div>
+            <div class="testimonial-name">[Your name]</div>
+            <div class="testimonial-role">AliExpress affiliate marketer</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card testimonial-card reveal" data-delay="100">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars"><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span></div>
+        <p class="testimonial-text">"The approval queue let me stay in control at first. Now it auto-approves because it learned exactly what I'd pick. That's the trust system working."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#16a34a">[B]</div>
+          <div>
+            <div class="testimonial-name">[Your name]</div>
+            <div class="testimonial-role">Dropshipper promoting on Pinterest</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card testimonial-card reveal" data-delay="200">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars"><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span><span class="testimonial-star">★</span></div>
+        <p class="testimonial-text">"I run multiple client campaigns. Each account is isolated with its own links and analytics. It's the only tool I found that ties AliExpress sourcing to Pinterest publishing."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#16a34a">[C]</div>
+          <div>
+            <div class="testimonial-name">[Your name]</div>
+            <div class="testimonial-role">Agency owner</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p style="text-align:center;margin-top:2rem;font-size:.8125rem;color:var(--text-dim)">Results vary by niche, product selection, and Pinterest traffic. These are our own early-access benchmarks — we publish verified numbers as they come in.</p>
+  </div>
+</section>
+
+<!-- ── FAQ ─────────────────────────────────────────────── -->
+<section id="faq" style="background:var(--bg-surface)" aria-labelledby="faq-heading">
+  <div class="container-sm">
+    <header class="section-header center">
+      <div class="section-eyebrow" aria-hidden="true">✦ FAQ</div>
+      <h2 id="faq-heading" class="section-title">Answers to your top questions</h2>
+    </header>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question" type="button">Is this allowed by Pinterest?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Yes. PinForge AI uses the official Pinterest API v5 with OAuth — the same approved method used by tools like Tailwind and Buffer. No browser automation, no scraping, no bots. Your pins publish through Pinterest's own developer platform.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">Does PinForge AI scrape AliExpress?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">No. We source trending products and images through the official AliExpress affiliate API. There's no scraping involved — meaning your product data comes from AliExpress directly and stays compliant with their terms.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">Will my accounts get banned?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">The risk is low because we operate through official APIs and enforce safety limits: max 15 pins per account per day and human-like 15–60 minute delays between posts. These limits are enforced server-side and cannot be overridden.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">How do commissions work?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">You connect your own AliExpress affiliate account, and your tracking ID is embedded into every generated link. When a Pinterest user clicks and buys, AliExpress attributes the sale and pays your commission in USD — directly to your affiliate account.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">Do I need a Pinterest Business account?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Yes. A Pinterest Business account is required to use the official API and access the features PinForge AI relies on. You can convert a personal account to Business for free in Pinterest's settings.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">How many accounts can I connect?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Starter: 1 account. Pro: up to 5 accounts. Agency: unlimited. Each account gets its own isolated queue, schedule, safety limits, and analytics.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">Is there a free plan?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Yes. The Starter plan is free forever — 1 Pinterest account, 5 pins/day, basic AI content, and manual approve. No credit card required.</div></div></div>
+      <div class="faq-item"><button class="faq-question" type="button">How does the approval queue work?<div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><div class="faq-answer-inner">You start in manual-approve mode. As the trust system learns which pins you approve, your trust score rises, and it gradually moves toward auto-approve. You always stay in control of the threshold.</div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem"><a href="faq.html" class="btn btn-ghost">View all FAQs →</a></div>
+  </div>
+</section>
+
+<!-- ── Newsletter ─────────────────────────────────────────── -->
+<section aria-labelledby="newsletter-heading">
+  <div class="container-sm" style="text-align:center">
+    <div class="section-eyebrow" style="justify-content:center" aria-hidden="true">✦ Stay updated</div>
+    <h2 id="newsletter-heading" class="section-title" style="margin:0 auto 1rem">Get affiliate growth tips weekly</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;font-size:1rem">Get AliExpress affiliate + Pinterest strategy tips and PinForge AI launch updates in your inbox. No spam.</p>
+    <form class="newsletter-form" action="https://formsubmit.co/abdulrehmanraza60@gmail.com" method="POST" aria-label="Newsletter signup">
+      <input type="hidden" name="_subject" value="New Newsletter Signup — PinForge AI"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://pinforgeai.site/thanks.html?type=newsletter"/>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+      <input type="email" name="email" class="input" placeholder="your@email.com" required aria-label="Email address"/>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <p style="font-size:.75rem;color:var(--text-dim);margin-top:.75rem">No spam. Unsubscribe anytime. We never sell your email.</p>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<div class="cta-section reveal">
+  <div class="container" style="position:relative;z-index:1">
+    <h2>Ready to automate your affiliate income?</h2>
+    <p>Turn AliExpress products into passive USD commissions on Pinterest — safely and on autopilot.</p>
+    <div class="cta-actions">
+      <a href="pricing.html" class="btn btn-primary btn-lg">Start for free — no card needed</a>
+      <a href="contact.html" class="btn btn-ghost btn-lg">Talk to us</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="PinForge AI Home">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.46 6 6.93V22h2v-6.07c3.39-.47 6-3.39 6-6.93 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+          </div>
+          <span class="nav-logo-text">PinForge <span>AI</span></span>
+        </a>
+        <p>Automated AliExpress affiliate marketing on Pinterest — official APIs, auto affiliate links, and safe publishing.</p>
+        <div class="footer-social">
+          <span class="footer-social-link disabled" aria-disabled="true" title="Coming soon" tabindex="-1">𝕏</span>
+          <span class="footer-social-link disabled" aria-disabled="true" title="Coming soon" tabindex="-1">📷</span>
+          <span class="footer-social-link disabled" aria-disabled="true" title="Coming soon" tabindex="-1">in</span>
+          <span class="footer-social-link disabled" aria-disabled="true" title="Coming soon" tabindex="-1">P</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><span class="footer-soon" title="Coming soon">Changelog</span></li>
+          <li><span class="footer-soon" title="Coming soon">Roadmap</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><span class="footer-soon" title="Coming soon">Press kit</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><span class="footer-soon" title="Coming soon">Cookie Policy</span></li>
+          <li><span class="footer-soon" title="Coming soon">GDPR</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">Help Center</a></li>
+          <li><a href="contact.html">Contact support</a></li>
+          <li><span class="footer-soon" title="Coming soon">Pinterest API docs</span></li>
+          <li><span class="footer-soon" title="Coming soon">Status page</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PinForge AI. Built with ❤️ for Pinterest creators.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

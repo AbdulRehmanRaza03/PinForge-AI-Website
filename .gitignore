@@ -1,0 +1,11 @@
+# Local dev server artifacts
+.dev-server.js
+server.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/

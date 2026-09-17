@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — PinForge AI</title>
+  <meta name="description" content="PinForge AI Privacy Policy. Learn how we collect, use, and protect your data. We never sell your data or store your Pinterest password."/>
+  <link rel="canonical" href="https://pinforgeai.site/privacy-policy.html"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#9333ea"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="PinForge AI Home">
+      <div class="nav-logo-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.46 6 6.93V22h2v-6.07c3.39-.47 6-3.39 6-6.93 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill="white"/><circle cx="12" cy="9" r="2.5" fill="white" opacity=".85"/></svg></div>
+      <span class="nav-logo-text">PinForge <span>AI</span></span>
+    </a>
+    <div class="nav-links"><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+    <div class="nav-actions">
+      <button class="nav-theme-btn" data-theme-toggle data-theme-icon="☀️" aria-label="Toggle theme">☀️</button>
+      <a href="coming-soon.html" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+      <button class="nav-mobile-btn" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile-menu" id="mobileMenu" role="menu"><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+
+<main id="main">
+
+<div class="legal-hero">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: December 1, 2024 · Effective: December 1, 2024</p>
+  </div>
+</div>
+
+<div class="legal-content">
+
+  <div class="legal-highlight">
+    <p><strong style="color:var(--text)">Plain English summary:</strong> We collect only what we need to run PinForge AI. We never sell your data. We never store your Pinterest password — only the OAuth token Pinterest issues. You can delete your data anytime by emailing privacy@pinforgeai.com.</p>
+  </div>
+
+  <nav class="legal-toc" aria-label="Table of contents">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#who-we-are">Who we are</a></li>
+      <li><a href="#data-we-collect">Data we collect</a></li>
+      <li><a href="#how-we-use">How we use your data</a></li>
+      <li><a href="#pinterest-oauth">Pinterest OAuth &amp; API</a></li>
+      <li><a href="#ai-providers">AI providers (Gemini, OpenAI, DeepSeek)</a></li>
+      <li><a href="#third-parties">Third-party services</a></li>
+      <li><a href="#data-storage">Data storage &amp; security</a></li>
+      <li><a href="#cookies">Cookies &amp; local storage</a></li>
+      <li><a href="#your-rights">Your rights</a></li>
+      <li><a href="#gdpr">GDPR (EU users)</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact-privacy">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="who-we-are">1. Who we are</h2>
+  <p>PinForge AI ("we", "us", "our") is a Software-as-a-Service platform that provides Pinterest scheduling and AI content generation services. We operate at <a href="https://pinforgeai.site">pinforgeai.site</a>.</p>
+  <p>For privacy inquiries, contact us at: <strong>privacy@pinforgeai.com</strong></p>
+
+  <h2 id="data-we-collect">2. Data we collect</h2>
+
+  <h3>2.1 Account data</h3>
+  <p>When you create a PinForge AI account, we collect:</p>
+  <ul>
+    <li>Email address (used for login and communications)</li>
+    <li>Full name (optional, for personalization)</li>
+    <li>Password (stored as a bcrypt hash — we never store plain-text passwords)</li>
+    <li>Account creation timestamp</li>
+  </ul>
+
+  <h3>2.2 Pinterest connection data</h3>
+  <p>When you connect a Pinterest account via OAuth2, we store:</p>
+  <ul>
+    <li>Pinterest username and display name (from Pinterest's API)</li>
+    <li>Pinterest profile image URL (from Pinterest's API)</li>
+    <li>OAuth access token (encrypted at rest)</li>
+    <li>OAuth refresh token (encrypted at rest)</li>
+    <li>Token expiry timestamp</li>
+  </ul>
+  <p><strong>We never store your Pinterest password.</strong> The OAuth2 flow means you log in through Pinterest's own consent screen — we only receive the token Pinterest issues after you approve.</p>
+
+  <h3>2.3 Content you create</h3>
+  <p>When you create pins, we store:</p>
+  <ul>
+    <li>Uploaded images (stored on our servers temporarily; moved to Supabase Storage in future updates)</li>
+    <li>Pin titles, descriptions, hashtags, alt text</li>
+    <li>Destination links (affiliate URLs, product URLs)</li>
+    <li>Target board ID and name</li>
+    <li>Scheduled post times</li>
+    <li>Content hash (SHA-256 of title + description, used for duplicate prevention)</li>
+  </ul>
+
+  <h3>2.4 Activity logs</h3>
+  <p>We maintain an audit log of every posting action, which includes:</p>
+  <ul>
+    <li>Timestamp of each attempt</li>
+    <li>Status (posted, failed, skipped, duplicate, rate_limit)</li>
+    <li>Pinterest pin ID (if successfully posted)</li>
+    <li>Error messages (if failed)</li>
+    <li>Board name and title</li>
+  </ul>
+
+  <h3>2.5 Usage data</h3>
+  <p>We may collect basic usage analytics such as pages visited and features used. We do not use third-party tracking pixels or ad network tracking.</p>
+
+  <h3>2.6 AI API keys</h3>
+  <p>If you provide your own Gemini, OpenAI, or DeepSeek API keys in Settings, we store them encrypted in our database. These keys are used only to make AI content generation requests on your behalf — never for any other purpose.</p>
+
+  <h2 id="how-we-use">3. How we use your data</h2>
+  <p>We use your data exclusively to:</p>
+  <ul>
+    <li>Provide the PinForge AI service (authentication, pin scheduling, AI content generation)</li>
+    <li>Send transactional emails (account confirmation, support responses, billing notifications)</li>
+    <li>Maintain the security and integrity of your account</li>
+    <li>Enforce our safety limits (daily cap, duplicate prevention)</li>
+    <li>Improve our service (aggregate, anonymized usage patterns only)</li>
+    <li>Comply with legal obligations</li>
+  </ul>
+  <p><strong>We never sell your data. We never use your data for advertising. We never share your content with other users.</strong></p>
+
+  <h2 id="pinterest-oauth">4. Pinterest OAuth &amp; API compliance</h2>
+  <p>PinForge AI is built exclusively on the official Pinterest API v5. Our use of Pinterest's API complies with:</p>
+  <ul>
+    <li>Pinterest API Terms of Service</li>
+    <li>Pinterest Developer Guidelines</li>
+    <li>Pinterest's OAuth2 authorization flow</li>
+  </ul>
+  <p>We request only the minimum OAuth scopes required: <code style="font-family:monospace;font-size:.8125rem;background:var(--bg-elevated);padding:.1rem .4rem;border-radius:.25rem">boards:read</code>, <code style="font-family:monospace;font-size:.8125rem;background:var(--bg-elevated);padding:.1rem .4rem;border-radius:.25rem">boards:write</code>, <code style="font-family:monospace;font-size:.8125rem;background:var(--bg-elevated);padding:.1rem .4rem;border-radius:.25rem">pins:read</code>, <code style="font-family:monospace;font-size:.8125rem;background:var(--bg-elevated);padding:.1rem .4rem;border-radius:.25rem">pins:write</code>, <code style="font-family:monospace;font-size:.8125rem;background:var(--bg-elevated);padding:.1rem .4rem;border-radius:.25rem">user_accounts:read</code>.</p>
+  <p>Users can revoke PinForge AI's access to their Pinterest account at any time by visiting Pinterest's security settings at <a href="https://www.pinterest.com/settings/security" target="_blank" rel="noopener noreferrer">pinterest.com/settings/security</a>.</p>
+
+  <h2 id="ai-providers">5. AI providers</h2>
+  <p>PinForge AI uses third-party AI providers to generate pin content. Depending on your selected provider:</p>
+
+  <h3>5.1 Google Gemini (default)</h3>
+  <p>Your product description, keywords, and optionally your image are sent to Google's Gemini API to generate pin content. Google's handling of this data is governed by the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Terms of Service</a> and Google's Privacy Policy. If you use your own Gemini API key, you are subject to Google AI Studio's terms directly.</p>
+
+  <h3>5.2 OpenAI (optional)</h3>
+  <p>If you choose OpenAI as your AI provider, your content is sent to OpenAI's API. OpenAI's handling is governed by the <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener noreferrer">OpenAI API Data Usage Policies</a>.</p>
+
+  <h3>5.3 DeepSeek (optional)</h3>
+  <p>If you choose DeepSeek, your content is sent to DeepSeek's API. Please review <a href="https://platform.deepseek.com/downloads/DeepSeek%20Privacy%20Policy.html" target="_blank" rel="noopener noreferrer">DeepSeek's Privacy Policy</a> before using this provider.</p>
+
+  <p><strong>Important:</strong> We recommend not including sensitive personal information in your product descriptions sent to AI providers, as these are processed by third-party servers.</p>
+
+  <h2 id="third-parties">6. Third-party services</h2>
+  <p>We use the following third-party services to operate PinForge AI:</p>
+  <ul>
+    <li><strong>Supabase</strong> — Authentication, database (PostgreSQL), and file storage. Data is hosted on AWS infrastructure. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></li>
+    <li><strong>Railway</strong> — Backend hosting (FastAPI server). <a href="https://railway.app/legal/privacy" target="_blank" rel="noopener noreferrer">Railway Privacy Policy</a></li>
+    <li><strong>Vercel</strong> — Frontend hosting (Next.js). <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel Privacy Policy</a></li>
+    <li><strong>Stripe</strong> (coming with paid plans) — Payment processing. We never store full payment card details. <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer">Stripe Privacy Policy</a></li>
+    <li><strong>Pinterest API</strong> — Pin and board management via official API. <a href="https://policy.pinterest.com/privacy-policy" target="_blank" rel="noopener noreferrer">Pinterest Privacy Policy</a></li>
+  </ul>
+
+  <h2 id="data-storage">7. Data storage &amp; security</h2>
+  <p>Your data is stored in a Supabase PostgreSQL database with the following protections:</p>
+  <ul>
+    <li>All data is encrypted at rest (AES-256)</li>
+    <li>All data in transit is encrypted via TLS 1.2+</li>
+    <li>Passwords are hashed using bcrypt (never stored in plain text)</li>
+    <li>OAuth tokens are stored with database-level encryption</li>
+    <li>API keys you provide are stored encrypted</li>
+    <li>EXIF metadata is stripped from images before storage</li>
+    <li>Access to the database is restricted to PinForge AI's backend service only</li>
+  </ul>
+  <p>We retain your data for as long as your account is active. If you delete your account, we delete all associated data within 30 days, except where legally required to retain it (e.g., billing records for 7 years in some jurisdictions).</p>
+
+  <h2 id="cookies">8. Cookies &amp; local storage</h2>
+  <p>PinForge AI uses minimal cookies and browser storage:</p>
+  <ul>
+    <li><strong>Supabase Auth session cookie</strong> — Required for keeping you logged in. This is an essential cookie; the service cannot function without it.</li>
+    <li><strong>Theme preference</strong> — Stored in localStorage to remember your dark/light mode preference. Contains no personal data.</li>
+    <li><strong>No advertising cookies.</strong> We do not use Google Analytics, Facebook Pixel, or any advertising network tracking.</li>
+  </ul>
+
+  <h2 id="your-rights">9. Your rights</h2>
+  <p>You have the following rights regarding your personal data:</p>
+  <ul>
+    <li><strong>Access:</strong> Request a copy of all data we hold about you</li>
+    <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+    <li><strong>Deletion:</strong> Request deletion of all your data ("right to be forgotten")</li>
+    <li><strong>Portability:</strong> Request your data in a machine-readable format (CSV)</li>
+    <li><strong>Objection:</strong> Object to certain processing activities</li>
+    <li><strong>Restriction:</strong> Request restriction of processing while a dispute is resolved</li>
+    <li><strong>Withdraw consent:</strong> Withdraw consent at any time (this will not affect the lawfulness of prior processing)</li>
+  </ul>
+  <p>To exercise any of these rights, email us at <strong>privacy@pinforgeai.com</strong> with the subject line "Data Rights Request". We will respond within 30 days.</p>
+  <p>You may also disconnect PinForge AI from your Pinterest account at any time via Pinterest's security settings, which immediately revokes our ability to post on your behalf.</p>
+
+  <h2 id="gdpr">10. GDPR (EU/EEA users)</h2>
+  <p>If you are located in the European Union or European Economic Area, you have additional rights under the General Data Protection Regulation (GDPR).</p>
+  <p><strong>Legal basis for processing:</strong></p>
+  <ul>
+    <li><strong>Contract performance:</strong> Processing necessary to provide the PinForge AI service you signed up for</li>
+    <li><strong>Legitimate interests:</strong> Security monitoring, fraud prevention, service improvement</li>
+    <li><strong>Consent:</strong> Marketing emails (you may withdraw at any time)</li>
+    <li><strong>Legal obligation:</strong> Compliance with applicable laws (e.g., retaining billing records)</li>
+  </ul>
+  <p>You have the right to lodge a complaint with your local data protection authority (DPA) if you believe we have not handled your data appropriately.</p>
+
+  <h2 id="children">11. Children's privacy</h2>
+  <p>PinForge AI is not directed to children under the age of 13 (or 16 in the EU). We do not knowingly collect personal information from children. If we become aware that a child under 13 has provided us with personal information, we will delete it immediately. If you believe a child has provided us with their data, please contact us at privacy@pinforgeai.com.</p>
+
+  <h2 id="changes">12. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
+  <ul>
+    <li>Update the "Last updated" date at the top of this page</li>
+    <li>Notify registered users via email at least 14 days before changes take effect</li>
+    <li>Show a notice in the PinForge AI dashboard</li>
+  </ul>
+  <p>Your continued use of PinForge AI after the effective date of changes constitutes acceptance of the updated policy.</p>
+
+  <h2 id="contact-privacy">13. Contact us</h2>
+  <p>For any privacy-related questions, requests, or concerns:</p>
+  <ul>
+    <li>Email: <strong>privacy@pinforgeai.com</strong></li>
+    <li>General contact: <a href="contact.html">Contact form</a></li>
+    <li>Mailing address: Available upon request</li>
+  </ul>
+  <p>We aim to respond to all privacy inquiries within 5 business days and no later than 30 days as required by law.</p>
+
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 3.54 2.61 6.46 6 6.93V22h2v-6.07c3.39-.47 6-3.39 6-6.93 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg></div><span class="nav-logo-text">PinForge <span>AI</span></span></a><p>AI-powered Pinterest automation using the official API v5.</p></div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
+      <div class="footer-col"><h4>Support</h4><ul><li><a href="faq.html">Help Center</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 PinForge AI. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
