@@ -1,11 +1,11 @@
 {
-  "name": "PinForge AI — Pinterest Automation",
+  "name": "PinForge AI — AliExpress Affiliate Automation",
   "short_name": "PinForge AI",
-  "description": "AI-powered Pinterest scheduling using the official API. No bots. No scraping.",
+  "description": "Automate AliExpress affiliate products on Pinterest — auto affiliate links, AI content, and safe publishing via official APIs.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#070712",
-  "theme_color": "#9333ea",
+  "theme_color": "#16a34a",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
