@@ -312,10 +312,10 @@ function initExitIntent() {
     box.style.cssText = 'max-width:420px;width:100%;text-align:center;padding:2.25rem 2rem;position:relative;animation:scaleIn .3s ease';
     box.innerHTML =
       '<button aria-label="Close" id="exitIntentClose" style="position:absolute;top:.75rem;right:.75rem;background:none;border:none;color:var(--text-dim);font-size:1.25rem;cursor:pointer;line-height:1;padding:.25rem">✕</button>' +
-      '<div style="font-size:2rem;margin-bottom:.75rem" aria-hidden="true">👋</div>' +
-      '<h3 id="exitIntentTitle" style="font-size:1.25rem;margin-bottom:.5rem">Before you go —</h3>' +
-      '<p style="color:var(--text-muted);font-size:.9375rem;margin-bottom:1.5rem;line-height:1.6">Join early access and we\'ll email you the moment PinForge AI opens up. Takes 10 seconds.</p>' +
-      '<a href="waitlist.html" class="btn btn-primary" style="width:100%">Join early access</a>';
+      '<div style="font-size:2rem;margin-bottom:.75rem" aria-hidden="true">💰</div>' +
+      '<h3 id="exitIntentTitle" style="font-size:1.25rem;margin-bottom:.5rem">Don\'t leave your commissions on the table</h3>' +
+      '<p style="color:var(--text-muted);font-size:.9375rem;margin-bottom:1.5rem;line-height:1.6">Your AliExpress affiliate links could be earning USD on Pinterest — automatically. Join the waitlist and be first in line when early access opens.</p>' +
+      '<a href="waitlist.html" class="btn btn-primary" style="width:100%">Start earning on autopilot</a>';
 
     overlay.appendChild(box);
     document.body.appendChild(overlay);
