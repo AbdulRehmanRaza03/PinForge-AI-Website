@@ -10,6 +10,8 @@ server.log
 # Next.js build / deps
 .next/
 node_modules/
+public/
+.vercel/
 
 # OS files
 .DS_Store

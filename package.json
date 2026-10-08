@@ -5,7 +5,7 @@
   "type": "commonjs",
   "description": "PinForge AI marketing site + DeepSeek chatbot serverless function",
   "scripts": {
-    "build": "echo 'Static site — no build step needed'"
+    "build": "node build.js"
   },
   "engines": {
     "node": ">=18"
