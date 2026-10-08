@@ -26,27 +26,29 @@
 
   /* ───────────────────────── Brand tokens ───────────────────────── */
   const BRAND = {
-    primary: '#16a34a',
-    primaryDark: '#15803d',
-    primaryLight: '#22c55e',
-    gradient: 'linear-gradient(135deg, #15803d 0%, #16a34a 50%, #4ade80 100%)',
+    primary: '#9333ea',
+    primaryDark: '#7c3aed',
+    primaryLight: '#a855f7',
+    gradient: 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #e879f9 100%)',
     bg: '#070712',
     surface: '#0d0d1f',
     elevated: '#161630',
     text: '#f8fafc',
     textMuted: '#94a3b8',
     textDim: '#475569',
-    border: 'rgba(22,163,74,.18)',
+    border: 'rgba(147,51,234,.18)',
   };
 
   /* ───────────────────────── Config ─────────────────────────────── */
   // Users may override these before the script runs.
   window.PINFORGE_CHAT_CONFIG = Object.assign(
     {
-      // Set deepseekEnabled = true and point `endpoint` at a server proxy to
-      // use live AI instead of the built-in rule engine. Do NOT put a real
+      // Set deepseekEnabled = true and point `endpoint` at the server proxy
+      // (see /api/chat.js) to use live DeepSeek AI. When the proxy is
+      // unavailable, the bot automatically falls back to the built-in
+      // rule engine, so it always remains usable. Never put a real
       // DeepSeek key here — it would be exposed to visitors.
-      deepseekEnabled: false,
+      deepseekEnabled: true,
       endpoint: '/api/chat',
       botName: 'PinForge Assistant',
       welcomeMessage:
@@ -180,16 +182,16 @@
 .pf-chat, .pf-chat * { box-sizing: border-box; margin:0; padding:0; }
 .pf-chat-launcher { position: fixed; bottom:1rem; right:1rem; z-index:9999; display:flex; flex-direction:column; align-items:flex-end; gap:.5rem; font-family:Inter,system-ui,sans-serif; }
 .pf-chat-label { background:${BRAND.elevated}; color:${BRAND.textMuted}; border:1px solid ${BRAND.border}; font-size:.75rem; font-weight:500; padding:.4rem .75rem; border-radius:9999px; cursor:pointer; box-shadow:0 8px 20px rgba(0,0,0,.4); animation:pf-bounce 1.5s infinite; }
-.pf-chat-btn { position:relative; width:56px; height:56px; border-radius:9999px; background:${BRAND.gradient}; color:#fff; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(22,163,74,.35); transition:transform .15s ease; }
+.pf-chat-btn { position:relative; width:56px; height:56px; border-radius:9999px; background:${BRAND.gradient}; color:#fff; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(147,51,234,.35); transition:transform .15s ease; }
 .pf-chat-btn:hover { transform:scale(1.05); }
 .pf-chat-btn svg { width:26px; height:26px; }
 .pf-ping { position:absolute; inset:0; border-radius:9999px; background:${BRAND.primary}; opacity:.3; animation:pf-ping 1.6s cubic-bezier(0,0,.2,1) infinite; z-index:-1; }
-.pf-online { position:absolute; top:2px; right:2px; width:12px; height:12px; border-radius:50%; background:#22c55e; border:2px solid #fff; }
+.pf-online { position:absolute; top:2px; right:2px; width:12px; height:12px; border-radius:50%; background:#a855f7; border:2px solid #fff; }
 .pf-badge { position:absolute; top:-2px; left:-2px; min-width:20px; height:20px; padding:0 5px; border-radius:9999px; background:#ef4444; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
 .pf-window { position:fixed; bottom:1rem; right:1rem; z-index:9999; width:calc(100vw - 2rem); max-width:384px; height:min(520px,calc(100dvh - 6rem)); display:flex; flex-direction:column; background:${BRAND.surface}; border:1px solid ${BRAND.border}; border-radius:1rem; box-shadow:0 24px 60px rgba(0,0,0,.55); overflow:hidden; font-family:Inter,system-ui,sans-serif; }
 .pf-header { display:flex; align-items:center; gap:.75rem; padding:.75rem 1rem; color:#fff; background:${BRAND.gradient}; }
 .pf-avatar { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.22); display:flex; align-items:center; justify-content:center; font-weight:800; position:relative; flex-shrink:0; }
-.pf-avatar-dot { position:absolute; bottom:0; right:0; width:10px; height:10px; border-radius:50%; background:#22c55e; border:2px solid rgba(255,255,255,.9); }
+.pf-avatar-dot { position:absolute; bottom:0; right:0; width:10px; height:10px; border-radius:50%; background:#a855f7; border:2px solid rgba(255,255,255,.9); }
 .pf-header-txt { flex:1; }
 .pf-header-txt b { font-size:.875rem; display:block; line-height:1.2; }
 .pf-header-txt span { font-size:.72rem; opacity:.85; }
