@@ -2,6 +2,15 @@
 .dev-server.js
 server.log
 
+# Environment (contains the real DeepSeek API key — NEVER commit)
+.env.local
+.env
+.env.*.local
+
+# Next.js build / deps
+.next/
+node_modules/
+
 # OS files
 .DS_Store
 Thumbs.db
