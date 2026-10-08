@@ -443,7 +443,14 @@
         });
         if (res.ok) {
           const data = await res.json();
-          replyText = data.reply;
+          // Only use the AI reply if it is a non-empty string; otherwise fall back.
+          if (typeof data.reply === 'string' && data.reply.trim()) {
+            replyText = data.reply.trim();
+          } else {
+            const r = localReply(trimmed);
+            replyText = r.text;
+            chips = r.chips;
+          }
         } else {
           const r = localReply(trimmed);
           replyText = r.text;
