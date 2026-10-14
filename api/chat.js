@@ -39,6 +39,16 @@ module.exports = async function handler(req, res) {
   // CORS is not strictly needed for same-origin, but harmless to allow.
   res.setHeader('Content-Type', 'application/json');
 
+  // CHATBOT PAUSED BY DEFAULT — returns a friendly maintenance reply without
+  // calling DeepSeek (no token usage). To enable live chat, set the environment
+  // variable CHATBOT_ENABLED=true on your host.
+  if (process.env.CHATBOT_ENABLED !== 'true') {
+    res.status(503).json({
+      reply: 'Our live chat assistant is temporarily paused. Please check our FAQ or email hello@pinforgeai.site — we will be back soon!',
+    });
+    return;
+  }
+
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed.' });
     return;

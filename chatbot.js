@@ -43,16 +43,15 @@
   // Users may override these before the script runs.
   window.PINFORGE_CHAT_CONFIG = Object.assign(
     {
-      // Set deepseekEnabled = true and point `endpoint` at the server proxy
-      // (see /api/chat.js) to use live DeepSeek AI. When the proxy is
-      // unavailable, the bot automatically falls back to the built-in
-      // rule engine, so it always remains usable. Never put a real
-      // DeepSeek key here — it would be exposed to visitors.
-      deepseekEnabled: true,
+      // CHATBOT PAUSED — set deepseekEnabled false and paused true so the
+      // bot never calls /api/chat (no token usage) and shows a friendly
+      // "offline" dummy reply instead. Toggle back on when ready.
+      deepseekEnabled: false,
+      paused: true,
       endpoint: '/api/chat',
       botName: 'PinForge Assistant',
       welcomeMessage:
-        "Hi! I'm the PinForge AI Assistant. Ask me about automating AliExpress affiliate products on Pinterest 👋",
+        "Hi! I'm the PinForge AI Assistant. We're currently improving our chat and will be back online soon. Thanks for your patience! 🙏",
     },
     window.PINFORGE_CHAT_CONFIG || {}
   );
@@ -186,12 +185,12 @@
 .pf-chat-btn:hover { transform:scale(1.05); }
 .pf-chat-btn svg { width:26px; height:26px; }
 .pf-ping { position:absolute; inset:0; border-radius:9999px; background:${BRAND.primary}; opacity:.3; animation:pf-ping 1.6s cubic-bezier(0,0,.2,1) infinite; z-index:-1; }
-.pf-online { position:absolute; top:2px; right:2px; width:12px; height:12px; border-radius:50%; background:#f43f5e; border:2px solid #fff; }
+.pf-online { position:absolute; top:2px; right:2px; width:12px; height:12px; border-radius:50%; background:#4b5563; border:2px solid #fff; }
 .pf-badge { position:absolute; top:-2px; left:-2px; min-width:20px; height:20px; padding:0 5px; border-radius:9999px; background:#ef4444; color:#fff; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
 .pf-window { position:fixed; bottom:1rem; right:1rem; z-index:9999; width:calc(100vw - 2rem); max-width:384px; height:min(520px,calc(100dvh - 6rem)); display:flex; flex-direction:column; background:${BRAND.surface}; border:1px solid ${BRAND.border}; border-radius:1rem; box-shadow:0 24px 60px rgba(0,0,0,.55); overflow:hidden; font-family:Inter,system-ui,sans-serif; }
 .pf-header { display:flex; align-items:center; gap:.75rem; padding:.75rem 1rem; color:#fff; background:${BRAND.gradient}; }
 .pf-avatar { width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.22); display:flex; align-items:center; justify-content:center; font-weight:800; position:relative; flex-shrink:0; }
-.pf-avatar-dot { position:absolute; bottom:0; right:0; width:10px; height:10px; border-radius:50%; background:#f43f5e; border:2px solid rgba(255,255,255,.9); }
+.pf-avatar-dot { position:absolute; bottom:0; right:0; width:10px; height:10px; border-radius:50%; background:#4b5563; border:2px solid rgba(255,255,255,.9); }
 .pf-header-txt { flex:1; }
 .pf-header-txt b { font-size:.875rem; display:block; line-height:1.2; }
 .pf-header-txt span { font-size:.72rem; opacity:.85; }
@@ -286,7 +285,7 @@
   win.innerHTML = `
     <div class="pf-header">
       <div class="pf-avatar">P<span class="pf-avatar-dot"></span></div>
-      <div class="pf-header-txt"><b>${cfg.botName}</b><span>Typically replies instantly</span></div>
+      <div class="pf-header-txt"><b>${cfg.botName}</b><span>Offline — back soon</span></div>
       <button class="pf-hbtn" data-act="restart" aria-label="Restart conversation">${ICONS.restart}</button>
       <button class="pf-hbtn" data-act="close" aria-label="Close chat">${ICONS.close}</button>
     </div>
@@ -427,6 +426,19 @@
 
     loading = true;
     sendBtn.disabled = true;
+
+    // PAUSED MODE — no API call, no token usage. Just a friendly dummy reply.
+    if (cfg.paused) {
+      const dummy = 'Our live chat assistant is temporarily paused while we make improvements. Please check our FAQ (bottom of the homepage) or email the team at hello@pinforgeai.site — we\'ll be back soon!';
+      messages.push({ role: 'assistant', content: dummy, ts: Date.now() });
+      addBubble(messages[messages.length - 1]);
+      setChips(['Pricing?', 'Features', 'Safety']);
+      persist();
+      scrollBottom();
+      loading = false;
+      sendBtn.disabled = false;
+      return;
+    }
 
     const typingRow = showTyping();
 
