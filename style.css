@@ -403,6 +403,17 @@ textarea.input { resize: vertical; min-height: 120px; }
 .mockup-pin-badge.green { background: rgba(16,185,129,.2); }
 .mockup-pin-badge.purple { background: rgba(147,51,234,.2); }
 
+/* Real product screenshot (replaces the CSS dummy mockup) */
+.mockup-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.mockup-screenshot-wrap {
+  background: var(--bg-surface);
+}
+
 /* ── Sections ────────────────────────────────────────────── */
 section { padding: var(--space-24) 0; }
 .section-eyebrow {
