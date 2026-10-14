@@ -27,16 +27,16 @@
   /* ───────────────────────── Brand tokens ───────────────────────── */
   const BRAND = {
     primary: '#e11d48',
-    primaryDark: '#be123c',
+    primaryDark: '#9f1239',
     primaryLight: '#f43f5e',
-    gradient: 'linear-gradient(135deg, #be123c 0%, #e11d48 50%, #fb7185 100%)',
+    gradient: 'linear-gradient(135deg, #9f1239 0%, #e11d48 100%)',
     bg: '#000000',
     surface: '#0a0a0a',
     elevated: '#141414',
     text: '#f8fafc',
-    textMuted: '#94a3b8',
-    textDim: '#475569',
-    border: 'rgba(225,29,72,.18)',
+    textMuted: '#9ca3af',
+    textDim: '#4b5563',
+    border: 'rgba(255,255,255,.08)',
   };
 
   /* ───────────────────────── Config ─────────────────────────────── */
